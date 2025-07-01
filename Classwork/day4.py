@@ -1,0 +1,2 @@
+b="vikash"
+print(a)
