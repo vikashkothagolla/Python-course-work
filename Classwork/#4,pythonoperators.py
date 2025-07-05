@@ -1,3 +1,4 @@
+
 a=10
 b=20
 print("addition(+):",a+b)  
@@ -100,7 +101,7 @@ y='PyThOn'
 print(y.swapcase())
 
 
-# Alignment and formatting methods
+# Alignment and formatting method
 y='tit for tat'
 print(y.center(30,"*"))
 print(y.center(20,"_"))
@@ -117,3 +118,36 @@ print(u.find('s'))
 print(u.count('a'))
 print(u.index('v'))
 print(u.rfind("a"))
+
+
+# String Testing Methods 
+a="pyhton"
+print(a.startswith("ki"))
+print(a.endswith("on"))
+print(a.isalpha())
+b="vikash123"
+print(b.isalnum())
+print(a.islower())
+print(a.islower())
+print(" ".isspace())
+
+#5. Replace & Modify Methods
+text1="sanjay"
+print(text1.replace("j","a"))
+print(text1.translate(str.maketrans("a","k")))
+print(text1.maketrans("hi","ya"))
+
+#6. Splitting & Joining Methods
+print(text1.split(" "))#Splits the string into a list by sep
+print(text1.rsplit(" "))# Splits from the right side.
+print(text1.splitlines(" "))#Splits at line breaks ( ).
+result=' '.join(text1)# Joins elements with a separator.
+print(result)
+text2="hello-ravi"#Splits into a 3-part tuple at first sep.
+print(text2.partition("-"))
+print(text2.rpartition("-"))# Splits into a3-part tuple at last sep.
+
+#7. Whitespace & Trimming Methods
+print("  ram ".strip()) #Removes leading and trailing characters (default: spaces).
+print("---ram".lstrip("-"))#Removes leading characters.
+print("ram---".rstrip("-")) #Removes trailing characters.
