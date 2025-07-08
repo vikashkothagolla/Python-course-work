@@ -67,3 +67,5 @@ print(all(l))
 print(len(l))
 print(max(l))
 print(min(l))
+
+
