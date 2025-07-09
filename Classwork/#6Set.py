@@ -52,4 +52,5 @@ print(max(s2))
 print(min(s2))
 print(sum(s2))
 print(sorted(s3))
-res=set[{}]
+res=set([1,2,3])
+print(res)
