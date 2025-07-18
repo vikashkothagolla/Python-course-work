@@ -1,35 +1,31 @@
-# Pharmacy Management System - Medicine Entry
-
-medicineid = int(input("Enter medicine ID: "))
-medicinename = input("Enter medicine Name: ")
-price= float(input("Enter medicine Price: "))
-categories = input("Enter medicine Categories (comma-separated): ").split(",")
-availablestock = int(input("Enter available Stock: "))
-sold_items = int(input("Enter Sold Units: "))
-stockdetails = (availablestock, sold_items)
-discount = float(input("Enter discount percentage: "))
-features_input = input("Enter medicine features: ")
-medicinefeatures = set(features_input.split(","))
-
-batchnumber = input("Enter batch number: ")
-expirydate = input("Enter Expiry Date:")
-
-suppliername = input("Enter Supplier Name: ")
-suppliercontact = input("Enter Supplier Contact Number: ")
-supplierlocation = input("Enter Supplier Location: ")
-
-supplier_string = "{'Name': '%s', 'Contact': '%s', 'Location': '%s'}" % (
-    suppliername, suppliercontact, supplierlocation)
-supplierdetails = eval(supplier_string)
-
-print("\n[Pharmacy Product Details using %% Operator Formatting]")
-print("Medicine ID: %d" % medicineid)
-print("Medicine Name: %s" % medicinename)
-print("Price: ₹%.2f" % price)
-print("Categories: %s" % str(categories))
-print("Stock Details (Available, Sold): %s" % str(stockdetails))
-print("Discount: %.2f%%" % discount)
-print("Medicine Features: %s" % str(medicinefeatures))
-print("Batch Number: %s" % batchnumber)
-print("Expiry Date: %s" % expirydate)
-print("Supplier Details: %s" % str(supplierdetails))
+# TESTBOOK APPLICATION
+product_id = int(input("Enter Product ID (Course/Test Series ID): "))
+product_name = input("Enter Product Name (Course/Test Series Name): ")
+price = float(input("Enter Price: "))
+categories = input("Enter Categories (subjects or exams): ")
+categories = [cat.strip() for cat in categories]  
+available_seats = int(input("Enter Available Seats: "))
+enrolled = int(input("Enter Enrolled: "))
+stock_details = (available_seats, enrolled)
+discount_percentage = float(input("Enter Discount Percentage: "))
+features = input("Enter Product Features (Live Classes, PDFs): ")
+product_features = set(feat.strip() for feat in features.split(","))  
+supplier_name = input("Enter Supplier Name: ")
+supplier_contact = input("Enter Supplier Contact Number: ")
+supplier_location = input("Enter Supplier Location: ")
+supplier_details = {
+    "name": supplier_name,
+    "contact": supplier_contact,
+    "location": supplier_location
+}
+print("\n--- Product Details ---")
+print(f"Product ID : {product_id}")
+print(f"Product Name : {product_name}")
+print(f"Price: ₹{price:.2f}")
+print(f"Categories: {', '.join(categories)}")
+print(f"Stock Details: Available - {stock_details[0]}, Enrolled - {stock_details[1]}")
+print(f"Discount (%): {discount_percentage}%")
+print(f"Product Features: {', '.join(product_features)}")
+print(f"Supplier Name : {supplier_details['name']}")
+print(f"Supplier Contact: {supplier_details['contact']}")
+print(f"Supplier Location: {supplier_details['location']}")
