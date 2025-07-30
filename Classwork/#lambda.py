@@ -1,56 +1,59 @@
-# shortest form of function +> normal way
-'''n=9
+# shortest form of function => normal way
+n=9
 if n%2==0:
       print("even")
 else:
-      print("Odd")'''
+      print("Odd")
+
 # using functions
-'''def evenorodd(n):
+def evenorodd(n):
      if n%2==0:
         print("Even")
      else:
           print("odd")
 evenorodd(3)
-evenorodd(8)'''
-'''# using lambda
+evenorodd(8)
+
+# using lambda
 evenorodd_lambda=lambda n: "even" if n%2==0 else "odd"
-print("evenorodd",evenorodd_lambda(67))'''
+print("evenorodd",evenorodd_lambda(67))
 
 
 
 # squares of number
-'''def squares(n):
+def squares(n):
     print(n*n)
 squares(3)
-squares(15)''' 
-'''squares_lambda=lambda n:n*n
-print(squares_lambda(9))'''
+squares(15) 
+# using lambda
+squares_lambda=lambda n:n*n
+print(squares_lambda(9))
 
 
 # list of square 
-'''def sqa(l):
+def sqa(l):
     for i in range(len(l)):
         l[i]**=2
     print(l)
-sqa([1,6,4,5,7])'''  
-'''# using lambda
+sqa([1,6,4,5,7]) 
+# using lambda
 sqa_lambda=list(map(lambda i : i*i,[1,2,3,4,5]))
 print(sqa_lambda)
-'''
+
 
 
 # add of two numbers
-'''def add(a,b):
+def add(a,b):
     print(a+b)
-add(78,90)'''
-'''# lambda
+add(78,90)
+# lambda
 add_lambda=lambda  a,b: a+b
-print(add_lambda(23,25))'''
+print(add_lambda(23,25))
 
 
+# lambda syntax
+var=lambda arg: e
 
-'''var=lambda arg: expressions
-'''
 
 # upper case of python programming
 squ_lambda=list(map(lambda i:i.upper(),"python programming"))
@@ -132,5 +135,6 @@ l=list(filter(lambda i:data[i]['avail'],data))
 
 price=list(filter(lambda i:data[i]['price']<90000,data))
 color=list(filter(lambda i:data[i]['color']=='green',data))
-
 print(l,price,color)
+
+
