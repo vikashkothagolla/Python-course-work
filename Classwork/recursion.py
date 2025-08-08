@@ -20,9 +20,11 @@ numbers(12)'''
     return numbers(n+1)
 numbers(1)'''
 
-def numbers(n):
+'''def numbers(n):
     if n==0:
         return n
     return n+numbers(n-1)
 print(numbers(10))
+'''
+
 
