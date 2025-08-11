@@ -1,0 +1,42 @@
+
+# Encapsulation
+class instagram: # class 
+    def __init__(self,username,password): # constructor i.e it is automatically executes var or initizes things
+        print("welcom to the instagram")
+        self.bio=''
+        self.post=[]
+        self.follower=[]
+        self.following=[]
+        self.username=username
+        self.password=password
+        print(f"hello {self.username} login succefully")
+
+
+    @property
+    def externalbio(self):
+        return self._bio
+    @externalbio.setter
+    def externalbio(self,upd_bio):
+        return self.upd_bio
+        def  Showpassword(self):
+            return self.__Showpassword
+        def  newpassword(self,newpassword):
+            return self.__(self,newpassword)
+vikash=instagram("Vikash","Vikash@123") #object 
+
+
+#public var-accessing
+print("Bio:",vikash.bio)
+print("Post:",vikash.post)
+print("Follower:",vikash.follower)
+print("Following:",vikash.following)
+print("Username:",vikash.username)
+
+#modifying pubilc var
+vikash.bio="happy"
+vikash.post.append("python course")
+vikash.following.extend(["rana","suryakumaryadav","travis head"])
+vikash.follower.extend(["klrahul",'virat kohil','travis head'])
+vikash.username=("Vikashs")
+
+vikash.__password=("Vikash@134903")

@@ -1,10 +1,3 @@
-'''
-n=5
-for i in range(n):
-    print(' ' * (n - i - 1) + ' * ' * ( i+1))
-for i in range(n-2-i-1):
-     print(' ' * (n - i - 1) + ' * ' * ( i+1))
-'''
 # TESTBOOK APPLICATION
 product_id = int(input("Enter Product ID (Course/Test Series ID): "))
 product_name = input("Enter Product Name (Course/Test Series Name): ")
