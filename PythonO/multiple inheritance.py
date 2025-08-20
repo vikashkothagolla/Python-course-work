@@ -46,7 +46,14 @@ d.display_d() # calling method/function
 # Definition:(Multilevel Inheritance)Inheritance in a chain — a class is derived from another derived class.
 # (Hierarchical Inheritance) Definition: Multiple child classes inherit from the same single parent class.
 # (Hybrid Inheritance) Definition: A combination of two or more types of inheritance.
+'''What is Polymorphism?
+Polymorphism means "many forms".
+In Python, it allows the same function or method name to be used for different types (classes).'''
 
 '''parent adn child have same method we use super()
 to extract information from paernt clas to child cls we use super()
 super can ocuur only we single child and parent'''
+
+#In your code, the __init__ method is Python’s constructor — it’s a special method that automatically runs whenever you create a new object from a class.
+#In your code, self is just a variable name (by convention) that refers to the current object being created or used
+# sa
