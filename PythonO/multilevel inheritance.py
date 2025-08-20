@@ -51,4 +51,4 @@ d.display_d() # calling method/function
 
 
 
-super() is used in differnt clases
+# super() is used in differnt clases
