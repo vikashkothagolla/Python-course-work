@@ -26,6 +26,9 @@ except(NameError,IndexError,KeyError,ValueError,TypeError) as e:
     print(f"Error occured: {e}")'''
 
 try:
+    amount=int(input("enter the amount: "))
+    if amount<0:
+        raise ValueError("Enter the positive value")
     a=10
     a=a+10
     l=[1,2,3]
@@ -38,7 +41,7 @@ except Exception as e:
     print(f"Error occured: {e}")
 else:
     print("No errors")
-    print(c)
+    print("You can withdraw")
 finally:
     print("---------code executed--------------")
 
