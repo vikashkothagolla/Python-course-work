@@ -60,7 +60,7 @@ mail=input("Enter the mail: ")
 password=(input("Enter the password: "))     
 my_functionb(mail,password) '''
 
-'''#variable length arguments. one * for single sum
+#variable length arguments. one * for single sum
 def sum(*l):
   s=0
   for i in l:
@@ -70,15 +70,15 @@ def sum(*l):
 print(sum(1,2,3,4,5))
 print(sum(1,23,2))
 print(sum(1,5,6))
-#variable length arguments. two ** for student and marks
+
+'''#variable length arguments. two ** for student and marks
 def display(**l):
     return l
 print(display(p=1,o=2,i=3))
 print(display(a=1,b=23))
 print(display(v=1))
- '''
 def my_function():
     msg="hello world"
     print(msg)
-my_function()    
+my_function()'''
 
