@@ -29,6 +29,14 @@ print(factorial(5))'''
 # string
 '''l="vikash"
 print(l[::-1])'''
+
+# string reverse
+def rev(n):
+    if len(n)<=1:
+        return 1
+    return rev(n[1::])+n[0]
+print(rev("vikash"))
+
 # fib
 '''def fib(n):
     if n==0:
@@ -138,7 +146,6 @@ def to_binary(n):
     if n == 0:
         return ""
     return to_binary(n // 2) + str(n % 2)
-
 # Test cases
 print(to_binary(5) or "0")  # "101"
 print(to_binary(8) or "0")  # "1000"
